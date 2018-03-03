@@ -9,7 +9,9 @@ html {
 	height: px2rem(40px);
 	width: 100%;
 	background-color: #80B373;
-	padding-left: px2rem(32px);
+	.header-content {
+		padding-left: px2rem(32px);
+	}
 	.header-item {
 		list-style-type:none;
 		float: left;
