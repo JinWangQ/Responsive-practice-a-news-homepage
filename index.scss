@@ -9,20 +9,35 @@ html {
 	height: px2rem(40px);
 	width: 100%;
 	background-color: #80B373;
+	@media (min-width: 769px) {
+		height: px2rem(15px);		
+	}
 	.header-content {
 		padding-left: px2rem(32px);
+		@media (min-width: 769px) {
+			padding-left: px2rem(125px);
+		}
 	}
 	.header-item {
 		list-style-type:none;
 		float: left;
 		color: #D1DFB7;
-		font-size: px2rem(16px);
+		font-size: px2rem(13px);
 		margin-right: px2rem(20px);
 		line-height: px2rem(40px);
 
 		&:nth-child(2) {
 			color: #fff;
 			font-size: px2rem(17px);
+			@media (min-width: 769px) {
+				font-size: px2rem(6px);
+			}
+		}
+		@media (min-width: 769px) {
+
+			font-size: px2rem(6px);
+			margin-right: px2rem(10px);
+			line-height: px2rem(15px);	
 		}
 	}
 }
@@ -32,6 +47,13 @@ html {
 		display: block;
 		width: 100%;
 		height: px2rem(220px);
+		@media (min-width: 769px) {
+			position: relative;
+			width: 50%;
+			height: px2rem(120px);
+			left: 50%;
+			margin-left: px2rem(-90px);
+		}
 	
 	}
 	.banner-title {
@@ -40,17 +62,33 @@ html {
 		bottom: px2rem(15px);
 		font-size: px2rem(22px);
 		color: #FFFFFF;
+		text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
 	    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	    @media (min-width: 769px) {
+			left: 50%;
+			bottom: px2rem(8px);
+			font-size: px2rem(12px);
+			margin-left: px2rem(-80px);
+		}
 	}
 }
 
 .news-content{
+	 @media (min-width: 769px) {
+	 	position: relative;
+	 	left: 40%;
+	 	margin-left: px2rem(-68px);
+	 }
 	.news-item {
 		height: px2rem(90px);
 		padding-left: px2rem(15px);
 		padding-right: px2rem(15px);
 		width: 100%;
 		box-sizing: border-box;
+		 @media (min-width: 769px) {
+		 	width: 50%;
+		 	height: px2rem(45px);
+		 }
 	}
 	.item-inner {
 		position: relative;
@@ -65,12 +103,24 @@ html {
 		width: px2rem(95px);
 		height: px2rem(70px);
 		margin-right: px2rem(15px);
+		@media (min-width: 769px) {
+			width: px2rem(50px);
+			height: px2rem(35px);
+			margin-right: px2rem(7px);
+			margin-top: px2rem(5px);
+		}
 	}
 	.news-title {
 		color: #404040;
 		font-size: px2rem(15px);
 		margin-top: px2rem(16px);
 		line-height: px2rem(20px);
+		@media (min-width: 769px) {
+			font-size: px2rem(5px);
+			line-height: px2rem(6px);
+			margin-top: px2rem(10px);
+		}
+
 	}
 	.time {
 		color:#888;
@@ -78,6 +128,11 @@ html {
 		position: absolute;
 		left: px2rem(110px);
 		bottom: px2rem(17px);
+			@media (min-width: 769px) {
+				font-size: px2rem(4px);
+				left: px2rem(57px);
+				bottom: px2rem(6px);
+			}
 	}
 	.num {
 		position: absolute;
@@ -85,6 +140,12 @@ html {
 		font-size: px2rem(12px);
 		right: px2rem(4px);
 		bottom: px2rem(17px);
+		@media (min-width: 769px) {
+			font-size: px2rem(4px);
+			bottom: px2rem(6px);
+			right: px2rem(6px);
+		}
+
 		//use before to make sure 
 		//when the number changes
 		//the icon is always right before it
@@ -98,8 +159,16 @@ html {
 			top: px2rem(0px);
 			left: px2rem(-17px);
 			background-image: url('./images/read.png');
+			@media (min-width: 769px) {
+				width: px2rem(4px);
+				height: px2rem(4px);
+				top: px2rem(0px);
+				left: px2rem(-5px);
+			}
 
 		}
 	}
 }
+
+
 
