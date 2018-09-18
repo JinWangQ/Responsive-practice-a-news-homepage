@@ -78,6 +78,7 @@ html {
 	 	position: relative;
 	 	left: 40%;
 	 	margin-left: px2rem(-68px);
+	 	width: 60%;
 	 }
 	.news-item {
 		height: px2rem(90px);
@@ -88,6 +89,7 @@ html {
 		 @media (min-width: 769px) {
 		 	width: 50%;
 		 	height: px2rem(45px);
+		 	width: 100%;
 		 }
 	}
 	.item-inner {
